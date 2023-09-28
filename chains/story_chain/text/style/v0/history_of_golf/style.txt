@@ -1,0 +1,25 @@
+{
+    "structure": "The podcast episode will be divided into five main sections, each containing a mix of information, anecdotes, and expert insights. Given that we have only 20 minutes, we will focus on delivering a rich, engaging, but concise narrative. Each section will begin with a thematic hook, followed by the central narrative and capped off with a transitional statement that leads into the next section.",
+    
+    "style": "The episode will be conversational and storytelling-focused, blending historical facts with engaging anecdotes. A sprinkle of humor and well-timed pauses will be utilized to keep the audience engaged. Imagery, music, and sound effects will be used sparingly to accentuate pivotal moments in the history of golf.",
+    
+    "tone": "The tone will be informative yet casual. While the topic is history-focused, the aim is to make the content relatable and enjoyable to both golf aficionados and newcomers. The tone will switch from light-hearted to contemplative, depending on the context of the story being told.",
+    
+    "narration": "Being the sole host, you will employ a one-sided dialogue style. You will use engaging rhetorical questions to evoke curiosity and involvement from the listener. Occasional direct addressing of the audience will make the episode feel more interactive. Short, pre-recorded interviews or voice clips from experts can be used to break up the narration and provide additional insights.",
+    
+    "opening": "Welcome, golf enthusiasts and history buffs alike, to this special episode where we tee off into the fascinating fairways of the past. Ever wondered how the 18th hole at St Andrews became such a big deal, or who really invented this game of green lawns and tiny balls? Well, stick around as we explore the birth, evolution, and the 'hole-in-one' moments that have shaped the world of golf. Let's get swinging!",
+    
+    "num_of_sections": 5,
+    
+    "sections_description": [
+        "Introduction and Overview: Kick off the episode with the origins debate, basic rules, and early pioneers. The focus here is to set the stage for what’s to come.",
+        
+        "Golden Age of Golf: Dive into early competitions, course designs, and key figures like George Sappenfield and 'Steady Ed' Headrick. Highlight how their contributions shaped the sport.",
+        
+        "The Scottish Influence: Explore the roots of golf in Scotland, discussing historical landmarks and key events like the first international golf contest in 1681 and the evolution of golf clubs and equipment.",
+        
+        "Golf Evolves: Discuss the modern game's formation, rules, and technological advancements, including the invention of the modern golf disc by Dave Dunipace and the formalization of rules.",
+        
+        "Closing Notes: Recap the episode's main points, including the cultural impact of golf, and the rise in its popularity globally. End with a look towards the future, including a mention of the International Disc Golf Center and the impact of COVID-19."
+    ]
+}

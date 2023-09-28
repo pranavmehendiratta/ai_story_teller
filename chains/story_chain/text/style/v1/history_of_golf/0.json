@@ -1,0 +1,23 @@
+{
+    "structure": "The podcast will be divided into seven distinct sections, each focusing on a different aspect of the history of golf. These sections will be: Introduction, Early Origins of Golf, Spread of Golf, Evolution of Golf Equipment, Etymology of the Word 'Golf', Museums and Preservation of Golf History, and Conclusion. Each section will start with a brief introduction of the topic, followed by a detailed discussion, and end with a concise summary or transition to the next topic.",
+    
+    "style": "The style of the podcast will be informative and conversational, with the aim of engaging the audience and making the content accessible to all, regardless of their prior knowledge of golf. The host will use storytelling techniques to bring the history of golf to life, using vivid descriptions and anecdotes where appropriate.",
+
+    "tone": "The tone of the podcast will be enthusiastic and passionate, reflecting the host's love for the sport of golf. It will also be respectful and appreciative, acknowledging the long and rich history of the game.",
+
+    "narration": "As the sole host, the narration will be first person, with the host sharing their own insights and perspectives on the history of golf. The host will also use direct address to engage with the audience, asking rhetorical questions and encouraging them to reflect on the information presented.",
+
+    "opening": "Welcome to another episode, dear listeners! Today, we're going on a journey back in time, to explore the rich and fascinating history of a sport that has captivated millions around the world - golf. Whether you're an avid golfer or just curious about the origins of this beloved game, there's something in this episode for you. So, grab your clubs - or your earphones - and let's tee off!",
+
+    "num_of_sections": 7,
+
+    "sections_description": [
+        "Introduction: A brief overview of the history of golf and the importance of understanding its origins and development.",
+        "Early Origins of Golf: A look at the early golf-like games in the Netherlands and Scotland, and the development of the St Andrews Links.",
+        "Spread of Golf: An exploration of how golf spread from Scotland to the rest of the British Isles, the United States, and beyond.",
+        "Evolution of Golf Equipment: A discussion of how golf equipment has evolved over the centuries, from the golf ball to the golf club.",
+        "Etymology of the Word 'Golf': A delve into the origins of the word 'golf', debunking some common myths along the way.",
+        "Museums and Preservation of Golf History: A tour of golf museums around the world and a reflection on the importance of preserving golf history.",
+        "Conclusion: A recap of the history of golf and an encouragement for listeners to appreciate and explore this rich history."
+    ]
+}

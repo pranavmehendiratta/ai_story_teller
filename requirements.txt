@@ -1,0 +1,7 @@
+elevenlabs
+openai
+langchain
+wikipedia
+feedparser
+newspaper3k
+listparser

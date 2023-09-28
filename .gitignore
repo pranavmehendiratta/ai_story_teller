@@ -1,0 +1,6 @@
+scratchpad.txt
+generared_audio/*
+generated_stores/*
+__pycache__/
+*.pyc
+venv/*

@@ -3,12 +3,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
 from chains.story_chain.prompts.outline.outline_human_prompt import human_prompt
 from chains.story_chain.prompts.outline.outline_system_prompt import system_prompt
-from common.models.base.base_content import BaseContent
-from langchain.chains.sequential import SequentialChain
-from typing import List, Dict
+from typing import List, Dict, Any
 from langchain.schema.document import Document
 import json
-from common.utils import to_snake_case
 
 _messages = [
     SystemMessagePromptTemplate(prompt = system_prompt), 
@@ -24,25 +21,16 @@ _outline_chain = LLMChain(
 
 def outline_chain_v1(
     topic: str,
-    language: str,
-    documents: List[Document]
-) -> List[Dict[str, str]]:
-    outlines = []
-    for doc in documents:
-        outline_str = _outline_chain.run(
-            {
-                "document_type": "wikipedia website",
-                "page_content": doc.page_content
-            }
-        )
-        print(f"---------- Outline {doc.metadata['source']} ----------")
-        print(f"{outline_str}")
-        print("---------- End Outline ----------")
-        outlines.append(
-            {
-                "source": doc.metadata["source"],
-                "content": doc.page_content, 
-                "outline": json.loads(outline_str)
-            }
-        )
-    return outlines
+    document_type: str,
+    doc: Document
+) -> Dict[str, Any]:
+    outline_str = _outline_chain.run(
+        {
+            "document_type": document_type,
+            "page_content": doc.page_content
+        }
+    )
+    print(f"---------- Outline {doc.metadata['formatted_source']} ----------")
+    print(f"{outline_str}")
+    print("---------- End Outline ----------")
+    return json.loads(outline_str)

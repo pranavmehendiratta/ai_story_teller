@@ -19,20 +19,32 @@ _chapters_chain = LLMChain(
 )
 
 def chapters_chain_v1(
-    summary_topic: str,
+    topic: str,
+    section_number: str,
     chapter_name: str,
-    section_topic: str,
-    context: str
+    chapter_number: str,
+    section_name: str,
+    ideas: str,
+    previous_section_title: str,
+    previous_section_content: str,
+    next_section_title: str,
+    content: str
 ) -> str:
     section_summary_str = _chapters_chain.run(
         {
-            "topic": summary_topic,
-            "chapter": chapter_name,
-            "section": section_topic,
-            "context": context
+            "topic": topic,
+            "section_number": section_number,
+            "chapter_name": chapter_name,
+            "chapter_number": chapter_number,
+            "section_name": section_name,
+            "ideas": ideas,
+            "previous_section_title": previous_section_title,
+            "previous_section_content": previous_section_content,
+            "next_section_title": next_section_title,
+            "content": content
         }
     )
-    print(f"---------- Section {section_topic} Summary ----------")
+    print(f"---------- Chapter {chapter_name} Section {section_name} Summary ----------")
     print(section_summary_str)
     print("---------- End of Section Summary ----------")
     return section_summary_str

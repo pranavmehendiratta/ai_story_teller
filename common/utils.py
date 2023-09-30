@@ -1,8 +1,9 @@
 import os
 import re
-from typing import List
+from typing import List, Dict
 from langchain.schema.document import Document
 from datetime import datetime
+
 
 def get_filename_without_extension(filepath) -> str:
     base_name = os.path.basename(filepath)  # Get the filename with extension
@@ -33,7 +34,7 @@ def read_text_files_from_directory(directory_path) -> List[str]:
     files.sort()
 
     # Filter out files that are not text files (based on the .txt extension)
-    text_files = [f for f in files if f.endswith('.json')]
+    text_files = [f for f in files if f.endswith('.json') or f.endswith('.txt')]
 
     # Read the contents of each text file and add to the list
     contents = []
@@ -96,3 +97,59 @@ def get_date_time_string() -> str:
     date_time_str = now.strftime("%Y-%m-%d %H:%M:%S")
     
     return date_time_str
+
+def concatenate_string_using_and(strings: List[str]) -> str:
+    if not strings:
+        return ""
+    if len(strings) == 1:
+        return strings[0]
+    return ", ".join(strings[:-1]) + ", and " + strings[-1]
+
+def convert_int_to_word(
+    num: int,
+    total: int
+) -> str:
+    if total == 1:
+        return "only"
+    
+    label = ""
+
+    if num == 1:
+        label = "first"
+    elif num == 2:
+        label = "second"
+    elif num == 3:
+        label = "third"
+    elif num == 4:
+        label = "fourth"
+    elif num == 5:
+        label = "fifth"
+    elif num == 6:
+        label = "sixth"
+    elif num == 7:
+        label = "seventh"
+    elif num == 8:
+        label = "eighth"
+    elif num == 9:
+        label = "ninth"
+    elif num == 10:
+        label = "tenth"
+    else:
+        raise ValueError(f"Invalid number: {num}. Right now can only handle upto 10.")
+    
+    if num == total:
+        label = "last"
+
+    return label
+
+def document_to_dict(doc: Document) -> Dict:
+    return {
+        "page_content": doc.page_content,
+        "metadata": doc.metadata
+    }
+
+def dict_to_document(doc_dict: Dict) -> Document:
+    return Document(
+        page_content = doc_dict["page_content"],
+        metadata = doc_dict["metadata"]
+    )

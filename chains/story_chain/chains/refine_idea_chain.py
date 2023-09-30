@@ -26,6 +26,8 @@ def refine_idea_chain_v1(
             "topic": topic
         }
     )
-    print(f"refine_ideas_str = {refined_ideas_str}")
+    print("------- Refined Ideas -------")
+    print(refined_ideas_str)
+    print("------- Done with Refined Ideas -------")
     refined_ideas_json = json.loads(refined_ideas_str)
     return refined_ideas_json

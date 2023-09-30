@@ -1,18 +1,23 @@
 from langchain.prompts import StringPromptTemplate
 
-system_prompt_template_v0 = """You are summarizing a set of articles, books, blogs, etc. Let's collectively call them documents. You have created an outline of each individual document you have read. Before making a consolidated summary of the documents, you want to group together similar ideas/topics into a chapter wise consolidated outline. Use the given topic as your guide for what to include/exclude. You should give a catchy name for every chapter. For every chapter add list of source for that chapter.
+"You are writer who has outline a lot of documents for a given topic. You have decided on the way you want to organize the final summary. You will be given the topic, your chosen organization method and the outlines from all the documents you have read (Remember some documents or parts of outlines maybe irrelevant to the topic so you should ignore them). You need to write a consolidated chapter wise outline which you will later expand based on the content from the sources. You should always cite sources as cited in the outlines originally."
 
-Output as a JSON (only output JSON nothing else!):
+system_prompt_template_v0 = """You are writer who has outlines for a lot of documents on a given topic. These outlines are not organized they just capture the main ideas in the document. You have decided on the way you want to organize the final summary. You will be given the topic, your chosen organization method and the outlines from all the documents you have read (Remember some documents or parts of outlines maybe irrelevant to the topic so you should ignore them). You need to write a consolidated chapter wise outline which you will later expand based on the content from the documents. You should always cite sources as cited in the outlines originally.
+
+Output as a JSON:
 {{
-    "chapters": [
-        "name": catchy name of the chapter,
-        "topics": [ // list of topics that make up this idea
-            {{
-                "topic": topic to cover,
-                "sources: list of sources for this topic
-            }}
-        ],
-       
+    "summary_title": write the title for the summary,
+    "chapters": [ // List of chapters
+        {{
+            "chapter_name": write the name for the chapter,
+            "sections": [ //list of sections to cover in this chapter in order
+                {{
+                    "section_title": write a title for the section,
+                    "ideas": list of ideas to covert in this section,
+                    "sources": list of sources where you can find these ideas
+                }}
+            ]
+        }}
     ]
 }}"""
 

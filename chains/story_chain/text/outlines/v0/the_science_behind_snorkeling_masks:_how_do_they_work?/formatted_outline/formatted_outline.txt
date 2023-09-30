@@ -1,0 +1,246 @@
+source: https://en.wikipedia.org/wiki/Snorkeling_part_1
+title: Snorkeling
+outline:
+1. Introduction
+ - Definition
+ - Popularity and appeal
+ - Surface disciplines of finswimming
+ - Other uses of snorkeling
+2. Equipment
+ - Essential equipment
+ - Snorkel
+ - Plain snorkel
+ - Full-face snorkel mask
+ - Diving mask
+ - Swimfins
+ - Exposure protection
+ - Weight belt
+ - Snorkeling vest
+3. Operation
+ - Breathing techniques
+ - Types of snorkels
+ - Safety mechanisms
+ - Snorkeling techniques
+ - Safety precautions
+4. Practice of snorkeling
+ - Snorkeling as a leisure activity
+ - Underwater photography
+ - Safety concerns
+ - Snorkeling locations
+ - Variants and related activities
+5. See also
+ - Submarine snorkel
+ - Vehicle snorkel
+6. References
+ - Sources
+ - External links
+
+source: https://en.wikipedia.org/wiki/Diving_mask_part_1
+title: Diving Mask
+outline:
+1. Function
+ - Refraction of Light
+ - Viewing Underwater
+ - Effects of Water on Vision
+2. Construction
+ - Types of Diving Masks
+ - Materials and Design
+ - Skirt and Nose Pocket
+ - Strap and Seal
+ - Purge Valve
+3. Manufacturing Standards
+ - National and International Standards
+4. Visual Correction
+ - Prescription Lenses
+ - Bifocal Lenses
+ - Removable Lenses
+ - Contact Lenses
+5. Fit
+ - Importance of a Good Fit
+ - Testing the Fit
+ - Factors Affecting Fit
+ - Eyelash Contact
+6. Use
+ - Adjusting the Strap
+ - Entering the Water
+ - Preventing Fogging
+ - Maintenance
+ - Mask Removal and Refitting
+7. Mask Clearing
+ - Causes of Leakage
+ - Methods of Clearing
+ - Equalizing
+8. Types of Diving Half-Mask
+ - Early Diving Masks
+ - Two-Window Masks
+ - Innovative Designs
+9. Alternative Equipment
+ - Full Face Diving Mask
+ - Lightweight Demand Diving Helmet
+ - Copper Standard Diving Helmet
+ - Fluid Filled Mask
+ - Contact Lenses
+10. See also
+ - Underwater Vision
+ - Human Factors in Diving Equipment Design
+11. References
+12. Further Reading
+13. External Links
+
+source: https://en.wikipedia.org/wiki/Underwater_vision_part_1
+title: Underwater Vision
+outline:
+1. Introduction
+ - Factors affecting underwater vision
+ - Effects of underwater vision on vertebrate eye
+ - Artificial illumination
+2. Focus
+ - Fish
+ - Humans
+ - Physiological variations
+3. Color Vision
+4. Visibility
+ - Factors affecting visibility
+ - Measurement of visibility
+ - Measurement of turbidity
+ - Low visibility
+5. See also
+ - Snell's law
+ - Diving mask
+ - Underwater computer vision
+ - Underwater photography
+6. References
+7. Further reading
+
+source: https://en.wikipedia.org/wiki/Diving_physics_part_1
+title: Diving Physics
+outline:
+1. Aspects of physics with particular relevance to diving
+ - Buoyancy
+ - Pressure
+ - Gas property changes
+ - Solubility of gases and diffusion
+ - Density effects
+ - Viscosity effects
+ - Heat balance
+ - Underwater vision
+ - Underwater acoustics
+2. Environmental physical phenomena of interest to divers
+ - Effects of weather
+ - Haloclines
+ - Ocean currents
+ - Thermoclines
+ - Tidal currents and changes in sea level
+3. See also
+ - Ambient pressure
+ - Atmospheric pressure
+ - Buoyancy
+ - Pressure
+4. References
+
+source: https://en.wikipedia.org/wiki/Human_body_part_1
+title: Human Body
+outline:
+1. Composition
+ - Elements
+ - Cells
+ - Genome
+ - Tissues
+2. Organs
+ - Heart
+ - Gallbladder
+3. Systems
+ - Circulatory system
+ - Digestive system
+ - Endocrine system
+ - Immune system
+ - Integumentary system
+ - Lymphatic system
+ - Musculoskeletal system
+ - Nervous system
+ - Reproductive system
+ - Respiratory system
+ - Urinary system
+4. Anatomy
+5. Physiology
+6. Development
+7. Society and culture
+ - Professional study
+ - Depiction
+ - History of anatomy
+ - History of physiology
+8. See also
+ - Anatomical model
+ - Body image
+ - Cell physiology
+ - Comparative anatomy
+ - Comparative physiology
+ - Development of the human body
+ - Glossary of medicine
+ - Human physical appearance
+ - Medicine
+ - Organ system
+ - Outline of human anatomy
+ - The Birth of the Clinic: An Archaeology of Medical Perception
+9. Human body lists
+ - List of skeletal muscles of the human body
+ - List of proteins in the human body
+ - List of organs of the human body
+ - List of distinct cell types in the adult human body
+ - List of human microbiota
+10. References
+ - Books
+11. External links
+ - The Book of Humans (from the late 18th and early 19th centuries)
+ - Inner Body
+ - Anatomia 1522–1867: Anatomical Plates from the Thomas Fisher Rare Book Library
+
+source: https://en.wikipedia.org/wiki/Breathing_gas_part_1
+title: Breathing Gases
+outline:
+1. Introduction
+2. For diving and other hyperbaric use
+ - Air
+ - Pure oxygen
+ - Nitrox
+ - Trimix
+ - Heliox
+ - Heliair
+ - Hydreliox
+ - Hydrox
+ - Neox
+3. Breathing air
+4. Classification by oxygen fraction
+ - Normoxic
+ - Hyperoxic, or oxygen enriched
+ - Hypoxic
+5. Individual component gases
+ - Oxygen
+ - Diluent gases
+ - Nitrogen
+ - Helium
+ - Neon
+ - Hydrogen
+6. Unwelcome components of breathing gases for diving
+ - Argon
+ - Carbon dioxide
+ - Carbon monoxide
+ - Hydrocarbons
+7. Moisture content
+8. Gas analysis
+9. Breathing gas standards
+10. Diving gas blending
+11. Density
+12. Hypobaric breathing gases
+13. Medical breathing gases
+ - Oxygen therapy
+ - Anaesthetic gases
+14. See also
+ - Mechanical ventilation
+ - Diving air compressor
+ - Diving cylinder
+ - Booster pump
+ - Industrial gas
+15. References
+16. External links
+

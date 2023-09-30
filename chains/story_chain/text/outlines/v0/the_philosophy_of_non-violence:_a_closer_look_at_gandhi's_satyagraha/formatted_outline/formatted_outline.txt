@@ -1,0 +1,379 @@
+source: https://en.wikipedia.org/wiki/Nonviolence_part_1
+title: Nonviolence
+outline:
+1. Introduction
+ - Definition of nonviolence
+ - Motives and goals of nonviolence
+ - Distinction between principled and pragmatic nonviolence
+2. Origins
+ - Nonviolence in Jainism, Buddhism, and Hinduism
+ - Evolution of nonviolence in Hinduism
+ - Forms of nonviolence in Jainism
+ - Nonviolence in Buddhism
+3. Forms of nonviolence
+ - Pragmatic nonviolence
+ - Principled nonviolence
+ - Religious nonviolence
+4. Methods
+ - Acts of protest
+ - Noncooperation
+ - Nonviolent intervention
+5. Revolution
+ - Nonviolent revolution
+ - Criticism of nonviolence in revolution
+6. Criticism
+ - Critics of nonviolence
+ - Criticism of nonviolence as ineffective
+ - Criticism of nonviolence as privileged
+ - Criticism of nonviolence as deluded
+7. Research
+ - Research on nonviolent campaigns
+ - Research on nonviolence and ethnic divisions
+8. Notable nonviolence theorists and practitioners
+ - James Bevel
+ - Grace Lee Boggs
+ - Dorothy Day
+ - Barbara Deming
+ - Daniel Ellsberg
+ - Mohandas Gandhi
+ - Bernard Lafayette
+ - James Lawson
+ - Martin Luther King Jr.
+ - Gene Sharp
+
+source: https://en.wikipedia.org/wiki/Mahatma_Gandhi_part_1
+title: Life and Legacy of Mohandas Karamchand Gandhi
+outline:
+1. Early Life and Background
+ - Birth and Family
+ - Education and Influences
+2. Three Years in London
+ - Student of Law
+ - Vegetarianism and Committee Work
+ - Called to the Bar
+3. Civil Rights Activist in South Africa (1893-1914)
+ - Arrival in South Africa
+ - Discrimination and Nonviolent Resistance
+ - Leadership and Organizing
+ - Return to India
+4. Struggle for Indian Independence (1915-1947)
+ - Role in World War I
+ - Champaran Agitations
+ - Kheda Agitations
+ - Khilafat Movement
+ - Non-cooperation
+ - Salt Satyagraha (Salt March)
+ - Gandhi as Folk Hero
+ - Negotiations
+ - Round Table Conferences
+ - Congress Politics
+ - World War II and Quit India Movement
+
+source: https://en.wikipedia.org/wiki/Mahatma_Gandhi_part_2
+title: Mahatma Gandhi: Life and Legacy
+outline:
+1. Early Life and Education
+ - Birth and Family Background
+ - Education and Early Influences
+2. Civil Rights Activism in South Africa
+ - Arrival in South Africa
+ - Championing Indian Rights
+ - Development of Satyagraha
+3. Return to India and Leadership in the Indian National Congress
+ - Role in Indian National Congress
+ - Non-Cooperation Movement
+ - Salt March and Civil Disobedience
+4. Round Table Conferences and Communal Award
+ - Participation in Round Table Conferences
+ - Communal Award and Poona Pact
+5. Congress Politics
+ - Resignation from Congress
+ - Return to Active Politics
+ - Clash with Subhas Chandra Bose
+6. World War II and Quit India Movement
+ - Opposition to Indian Participation in the War
+ - Quit India Movement and Arrest
+ - Impact and Consequences
+7. Partition and Independence
+ - Opposition to Partition
+ - Role in Independence Negotiations
+ - Legacy of Partition
+8. Death
+ - Assassination and Mourning
+ - Trial and Conviction of Assassins
+ - Funeral and Memorials
+9. Principles, Practices, and Beliefs
+ - Truth and Satyagraha
+ - Nonviolence
+10. Literary Works
+ - Autobiography and Other Writings
+ - Complete Works and Controversies
+11. Legacy
+ - Gandhi's Influence on Leaders and Movements
+ - Global Days Celebrating Gandhi
+ - Awards and Honors
+12. Current Impact within India
+ - Reverence and Rejection of Gandhi
+ - Gandhi Jayanti and Martyrs' Day
+ - Temples and Memorials
+13. Descendants
+ - Gandhi's Children and Grandchildren
+
+source: https://en.wikipedia.org/wiki/Satyagraha_part_1
+title: Satyagraha
+outline:
+1. Principles
+ - Nonviolence
+ - Truth
+ - Not stealing
+ - Non-possession
+ - Body-labour or bread-labour
+ - Control of desires
+ - Fearlessness
+ - Equal respect for all religions
+ - Economic strategy such as boycotts of imported goods
+2. Rules for satyagraha campaigns
+ - Harbour no anger
+ - Suffer the anger of the opponent
+ - Never retaliate to assaults or punishment
+ - Voluntarily submit to arrest or confiscation of your own property
+ - Defend property non-violently
+ - Do not curse or swear
+ - Do not insult the opponent
+ - Neither salute nor insult the flag of your opponent or your opponent's leaders
+ - Defend opponent non-violently
+ - Behave courteously and obey prison regulations
+ - Do not ask for special favourable treatment
+ - Do not fast in an attempt to gain conveniences
+ - Obey the orders of the leaders of the civil disobedience action
+3. Origin and meaning of name
+ - Competition in the news-sheet Indian Opinion
+ - Meaning of the term Satyagraha
+4. Contrast to "passive resistance"
+5. Ahimsa and satyagraha
+6. Defining success
+7. Means and ends
+8. Satyagraha versus duragraha
+9. Large-scale usage of satyagraha
+10. American Civil Rights Movement
+11. Satyagraha in relation to genocide
+12. See also
+13. References
+14. External links
+
+source: https://en.wikipedia.org/wiki/Civil_disobedience_part_1
+title: Civil Disobedience
+outline:
+1. Introduction
+ - Definition of civil disobedience
+ - Historical examples of civil disobedience
+ - Influence of civil disobedience on social movements
+2. History
+ - Early examples of civil disobedience in literature
+ - Civil disobedience in the Glorious Revolution
+ - Civil disobedience in the 19th and 20th centuries
+3. Etymology
+ - Origin of the term 'civil disobedience'
+ - Debate over the meaning of civil disobedience
+4. Theories
+ - Different theories of civil disobedience
+ - Debate over the use of violence in civil disobedience
+ - Distinction between revolutionary and non-revolutionary civil disobedience
+ - Collective vs. solitary civil disobedience
+5. Choices
+ - Different actions taken in civil disobedience
+ - Decisions regarding compliance with authorities
+ - Plea options in civil disobedience cases
+ - Allocution and its role in civil disobedience
+6. Legal implications
+ - Government response to civil disobedience
+ - Debate over the legitimacy of civil disobedience
+ - Different types of civil disobedience in legal cases
+ - Role of punishment and deterrence in civil disobedience
+7. See also
+8. References
+9. Further reading
+
+source: https://en.wikipedia.org/wiki/Pacifism_part_1
+title: Pacifism
+outline:
+1. Definition
+ - Pacifism as opposition to war and violence
+ - Different views within pacifism
+ - Moral considerations
+ - Nonviolence
+2. Types
+ - Absolute pacifism
+ - Conditional pacifism
+3. Police actions and national liberation
+4. History
+ - Early traditions
+ - Peace movements
+ - Between the two World Wars
+ - World War I
+ - Later 20th century
+5. Antiwar literature of the 20th century
+6. Religious attitudes
+ - Baháʼí Faith
+ - Buddhism
+ - Christianity
+ - Hinduism
+ - Islam
+ - Jainism
+
+source: https://en.wikipedia.org/wiki/Pacifism_part_2
+title: Pacifism
+outline:
+1. Ahmadiyya
+ - Ahmadiyya understanding of Islam
+ - Founder's views on violence
+ - Objective of peaceful propagation of Islam
+2. Jainism
+ - Central principles of Jainism
+ - Value of human life
+ - Vegetarianism
+3. Judaism
+ - Peace as a desirable goal
+ - Jewish Peace Fellowship
+ - Neturei Karta group
+ - Examples from the Hebrew Bible
+ - Holocaust Remembrance Day
+4. Government and political movements
+ - Tolerance and outlawing of pacifist views
+ - Selective service and conscientious objectors
+ - Civilian service in European countries
+ - Political parties and compromise
+ - International criminal law
+ - Pacifist character in national constitutions
+5. Pacifism and abstention from political activity
+ - Views on the state
+ - Religious groups refraining from political activity
+6. Anarcho-pacifism
+ - Rejection of violence
+ - Influence of Henry David Thoreau
+ - Opposition to violence in anarchism
+ - Influence of Leo Tolstoy and Mahatma Gandhi
+ - Anti-militarism in France
+7. Opposition to military taxation
+ - Pacifists' objection to funding the military
+8. Criticism
+ - Argument for using violence to prevent further violence
+ - Long-term effectiveness of nonviolence
+ - Defence by civil resistance
+ - Axis aggression and World War II
+ - Criticism of nonviolent pacifism
+ - Criticism of pacifism as self-contradictory
+ - Criticism of pacifism as serving state interests
+9. See also
+10. References
+11. Further reading
+ - Books and articles on pacifism
+12. External links
+
+source: https://en.wikipedia.org/wiki/Ahimsa_part_1
+title: Ahimsa: The Principle of Nonviolence in Indian Religions
+outline:
+1. Introduction
+ - Definition of Ahimsa
+ - Importance in Indian Religions
+ - Relation to Divine Spiritual Energy
+ - Karmic Consequences of Violence
+2. Etymology
+ - Meaning of the Word Ahimsa
+3. Origins
+ - Reverence for Ahimsa in Hindu, Jain, and Buddhist Texts
+ - Development of Ahimsa in Jainism
+ - Revival and Preaching of Ahimsa by Tirthankaras
+ - Emphasis on Ahimsa by Valluvar
+ - Advocacy of Ahimsa by Mahatma Gandhi
+4. Hinduism
+ - Evolution of Ahimsa in Vedic Texts
+ - Ahimsa in Ancient Vedic Texts
+ - Ahimsa in the Epics
+ - Debate on Ahimsa in War and Self-Defense
+ - Ahimsa in Relation to Criminal Law
+5. Jainism
+ - Radical Implementation of Ahimsa in Jainism
+ - The Five Vows of Jainism
+ - Differences in Ahimsa Practice for Laypersons and Monastics
+ - Ahimsa and Vegetarianism in Jainism
+ - Debate on Ahimsa in Jain Texts
+6. Buddhism
+ - Inclusion of Ahimsa in the Five Precepts
+ - Application of Ahimsa to Laypersons and Monastics
+ - Views on War and Violence in Buddhism
+ - Ethical Considerations in Killing and Self-Defense
+7. Modern Times
+ - Promotion of Ahimsa by Spiritual Figures
+ - Influence of Ahimsa on Mahatma Gandhi
+ - Criticism and Alternative Views on Ahimsa
+ - Ahimsa in Yoga Philosophy
+8. Laws and Practices
+ - Bans on Killing in Historical and Cultural Contexts
+9. Conclusion
+ - Summary of Ahimsa in Indian Religions
+10. See also
+11. References
+12. External links
+
+source: https://en.wikipedia.org/wiki/Indian_independence_movement_part_1
+title: Indian Independence Movement
+outline:
+1. Background
+ - Early British Colonialism in India
+ - Early rebellions
+2. Rebellion of 1857
+3. Rise of organized movements
+4. Movements
+ - Partition of Bengal, 1905
+ - Jugantar
+ - Alipore bomb conspiracy case
+ - Howrah gang case
+5. Communist Consolidation
+6. Delhi-Lahore conspiracy case
+7. Ghadar Mutiny
+8. First World War
+ - Hindu-German Conspiracy
+ - Ghadar Mutiny
+ - 1st Christmas Day and 2nd Christmas Day plot
+ - Niedermayer-Hentig Expedition
+ - Nationalist response to war
+ - British reforms
+9. Gandhi arrives in India
+
+source: https://en.wikipedia.org/wiki/Indian_independence_movement_part_2
+title: Indian Independence Movement
+outline:
+1. Jallianwala Bagh massacre
+ - Background
+ - Massacre
+ - Aftermath
+2. First non-co-operation movement
+ - Gandhi's Non-Cooperation Movement
+ - Membership in the party
+ - Emergence of new leaders
+3. Result of movements by Gandhi
+ - Impact of mass movements
+ - Quit India Movement
+4. Purna Swaraj
+ - Demand for complete independence
+ - All-India Congress Forum
+ - Lahore resolution
+5. Revolutionary movement
+ - Emergence of revolutionary groups
+ - Activities of nationalists abroad
+ - Role of Indian National Army
+ - Decline of revolutionary activities
+6. Elections and the Lahore resolution
+ - Government of India Act 1935
+ - All-India Muslim League
+ - All India Azad Muslim Conference
+7. Final process of Indian self-rule movement
+ - Provincial elections
+ - Quit India Movement
+ - Others
+8. Impact of World War II
+ - Factors leading to decolonization
+ - Role of Indian leaders
+ - Sovereignty and partition of India
+

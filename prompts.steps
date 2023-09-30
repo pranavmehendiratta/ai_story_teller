@@ -1,0 +1,158 @@
+NOTES:
+(2.5). Maybe need another step which rates the contents of the wikipedia document to the relevance with the topic (1 - 10) and why? which will help in find the most relevant articles. Basically, sort all the documents based on relevance and then given the length of the summary take a set of documents. For instance, it could be 10 document for 20 mins, 20 documents for 30 mins etc.
+
+(2.8). Need to test what the website and pdf loaders 
+
+(2.9). Maybe need to add another chain that cleans up the metadata from the document (could be useful for both wikipeida and uploaded documents)
+DONE NOTES   
+
+
+
+1. You are a writer who has picked up a broad topic for which you want to write a detailed yet interesting and captivating blog post. You will be given the broad topic, you need to give 5 unique ideas for the blog post and label the genres for the topic.
+
+Output as a JSON:
+[ // list of five podcast ideas
+    "idea": write down the idea,
+    "genre_tags": list of a few genre tags for the idea
+]
+
+2. You are a writer who has picked up a broad topic for which you want to write a detailed yet interesting and captivating blog post. Before writing the blog post you want to research the topic on wikipedia. Write a handful of keywords that you would use to search on wikipedia to understand the topic in detail.. 
+
+### DO NOT USE THIS - It doesn't help to search in a given language
+You are a writer who has picked up a broad topic for which you want to write a detailed yet interesting and captivating blog post. Before writing the blog post you want to research the topic on wikipedia. Write a handful of keywords that you would use to search on wikipedia to understand in detail the given topic. If a topic is specific to a culture, geography, language etc. add some keywords from that language as well as English
+###
+
+Output as a JSON:
+{{
+    "wikipedia_keywords": list of keywords to search on wikipedia
+}}
+
+3. You are a writer who is writing detailed outline for a set of documents you read recently. The document you read vary from academic papers to magazine articles. You know the topic that you are reading about. Given the topic, you need to find out the best way to logically sequence the outline so that it is coherent.
+
+For example:
+topic: The French Revolution
+logical_sequence: ["Chronological Order"]
+
+topic: The Effects of Pollution on Marine Life
+logical_sequence: ["Cause and Effect", "General to Specific"]
+
+topic: The Benefits and Drawbacks of Urbanization
+logical_sequence: ["Comparison and Contrast", "Order of Importance"]
+
+topic: How to Assemble a Desk
+logical_sequence: ["Chronological Order, "Spatial Order"]
+
+topic: Introducing a New Product Line to Boost Sales
+logical_sequence: ["Problem and Solution", "Order of Importance"]
+
+topic: Symbolism in "The Great Gatsby"
+logical_sequence: ["Categorical", "Topical Order"]
+
+topic: Exploring the Landmarks of Rome
+logical_sequence: ["Spatial Order", "Categorical Order based on types of landmarks (museums, ancient ruins, modern attractions)"]
+
+topic: Comparing Two Latest Smartphone Models
+logical_sequence: ["Comparison", "Contras"]
+
+topic: Evolution of Women's Footwear in the 20th Century
+logical_sequence: ["Chronological Order (decade by decade)", "Categorical Order (by types of shoes, like heels, flats, boots)"]
+
+topic: The Relationship Between Sleep and Mental Health
+logical_sequence: ["Cause and Effect (how lack of sleep can lead to mental health issues)", "Comparison and Contrast (mental health with adequate sleep vs. without)"]
+
+topic: Matrilineal Societies in Southeast Asia
+logical_sequence: ["Spatial Order (region by region)", "Categorical Order (by societal customs, roles, rituals)"]
+
+topic: Street Foods Around the World
+logical_sequence: ["Spatial Order (continent or country-wise)", "Categorical Order (by types of food, like savory, sweet, drinks)"]
+
+topic: Pros and Cons of Universal Basic Income
+logical_sequence: ["Comparison and Contrast", "Order of Importance"]
+
+topic: Augmented Reality vs. Virtual Reality: The Future of Gaming
+logical_sequence: ["Comparison and Contrast (highlighting features, user experience, potential)"]
+
+topic: Deforestation and Its Global Impact
+logical_sequence: ["Cause and Effect (how deforestation leads to various environmental and societal problems)"]
+
+topic: The Life and Works of Frida Kahlo
+logical_sequence: ["Chronological Order (stages of her life) with Categorical Subsections (highlighting her major works, influences, personal challenges)"]
+
+topic: Dinosaurs of the Cretaceous Period
+logical_sequence: ["Spatial Order (based on regions where fossils were found)", "Categorical Order (by types of dinosaurs—herbivores, carnivores)"]
+
+topic: Analysis of a New Jazz Album's Tracks
+logical_sequence: ["Categorical", "Topical Order (song by song, with themes or instrumentation as categories)"]
+
+topic: Impact of Social Media on Teenage Relationships
+logical_sequence: ["Cause and Effect (how social media use affects relationships)", "Comparison and Contrast (relationships with vs. without heavy social media influence)"]
+
+Output as a JSON:
+{{
+    "logical_sequence": types of logical sequence,
+    "explanation": explain why this logical sequence would make sense,
+    "rate": rate this sequence between 1-10 (only output a number)
+}}
+
+
+4. You are writer who is reasearching the topic: "{topic}". You are reading a {document_type} for which you want to write a detailed outline.
+
+Output as a JSON:
+{{
+    title: write the title for the document,
+    sections: [ // list of all the sections
+        {{
+            "section_title": write the title for the section
+            "section_subtitles": list of subtitles to cover in this section
+        }}
+    ]
+
+}}
+
+5. Format the outline - Basically making a numbered list of outlines from the json so it's easier for chatgpt to understand.
+
+6. You are writer who has outlines for a lot of documents on a given topic. These outlines are not organized they just capture the main ideas in the document. You have decided on the way you want to organize the final summary. You will be given the topic, your chosen organization method and the outlines from all the documents you have read (Remember some documents or parts of outlines maybe irrelevant to the topic so you should ignore them). You need to write a consolidated chapter wise outline which you will later expand based on the content from the documents. You should always cite sources as cited in the outlines originally.
+
+Output as a JSON:
+{{
+    "summary_title": write the title for the summary,
+    "chapters": [ // List of chapters
+        {{
+            "chapter_name": write the name for the chapter,
+            "sections": [ //list of sections to cover in this chapter in order
+                {{
+                    "section_title": write a title for the section,
+                    "ideas": list of ideas to covert in this section,
+                    "sources": list of sources where you can find these ideas
+                }}
+            ]
+        }}
+    ]
+}}
+
+Human:
+topic: {topic}
+organization_method: You have decided to write the chapters in {logical_order} because {logical_order_reason}
+
+```
+{formatted_outline}
+```
+
+7. You are a writer who has written a chapter wise outline for a topic. You will be given a topic, the current chapter you are working on, the section in the current chapter that you need to summarize, the place of the section in the current chapter, the summary of the previous section (if you're working on the first section in the chapter then the last section from the previous chapter will be provided), the name of the next section and all the contents of a document in between three back ticks(```). You need to write a few paragraphs long summary for the given section and chapter such that fits perfectly in the complete summary.
+
+
+Human:
+The topic that you have chosen is '{topic}'. You're working on {section_number} section of '{chapter_name}' which is the {chapter_number} chapter in the summary. The name of this section is '{section_name}'. You want to cover {ideas} in this section. 
+
+```
+previous_section_content: {previous_section_content}
+next_section_title: {next_section_title}
+content: {content}
+```
+
+8. Combine the sections and rewrite so that the transitions are good
+
+You are writer who has summarized a set of ideas into separate summaries based on each of the documents that you have read. You now want to consolidate the summaries into one summary. You will be given the title of the summary, the ideas you want to cover in that summary, and all the separate summaries in between three back ticks(```). Each summary will be separated by '\n\n-- Next Summary --\n\n'. You need to write a consolidated summary which is narrated in third person.
+
+
+You are writing a short story on 'The Philosophy of Non-Violence: A Closer Look at Gandhi's Satyagraha'. You are currently writing the section 'Gandhi's Early Life and Influences' in which you want to cover Birth and Family, Education and Influences, and Student of Law ideas. Since the complete story will be narrated to the user in audio format write the summary such that it is audio friendly and transitions nicely from the previous topic 'Definition and Forms of Nonviolence'. 

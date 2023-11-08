@@ -13,6 +13,10 @@ from langchain.schema.document import Document
 import json
 import shutil
 from langchain.callbacks import get_openai_callback
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 VERSION = "v0"
 
@@ -21,54 +25,16 @@ MAX_CONTEXT_SIZE_GPT_3_5 = 50000 # words (7692 - 10000), pages (30.8 - 40.0)
 OVERLAP_SIZE = 2000 # words (307 - 400), pages (1.2 - 1.6)
 
 # Directories
-REFINE_IDEA_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/refine_idea/{VERSION}"
-WIKIPEDIA_KEYWORDS_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/wikipedia_keywords/{VERSION}"
-WIKIPEDIA_DOCUMENTS_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/wikipedia_documents/{VERSION}"
-LOGICAL_SEQUENCE_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/logical_sequence/{VERSION}"
-OUTLINE_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/outlines/{VERSION}"
-CHAPTER_CONSOLIDATED_OUTLINE_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/chapter_consolidated_outlines/{VERSION}"
-CHAPTERS_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/chapters/{VERSION}"
-CONSOLIDATED_CHAPTER_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/consolidated_chapters/{VERSION}"
-REFINED_SUMMARY_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/refined_summary/{VERSION}"
-FINAL_SUMMARY_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/final_summary/{VERSION}"
-
-"""
-REFINED_OUTLINE_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/refined_outline/{VERSION}"  
-STYLE_OUTLINE_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/style/{VERSION}"
-SECTIONS_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/sections/{VERSION}"
-SCRIPTS_DIR = f"/Users/pranavmehendiratta/Documents/projects/story_teller/chains/story_chain/text/scripts/{VERSION}"
-"""
-"""
-def main_wikipedia():
-    documents = WikipediaLoaderWrapper.load(
-        query = topics[0], 
-        load_max_docs = 4,
-        doc_content_chars_max = 8000
-    )
-    print(f"num docs = {len(documents)}")
-    split_docs = CharacterTextSplitter(chunk_size = 60000, chunk_overlap = 2000).split_documents(documents = documents)
-    print(f"num split docs = {len(split_docs)}")
-    
-    for doc in documents:
-        print("source = ", doc.metadata["source"])
-        print("page_content = ", doc.page_content)
-        print("\n\n")
-
-    print("--> Creating ideas based on the context")
-    print("\n\n")
-    raw_ideas = ideas_chain_v1(
-        topic = topics[0],
-        split_docs = split_docs
-    )
-    print(f"raw_ideas = {raw_ideas}")
-    print("\n\n")
-    print("--> Refining ideas based on the context")
-    outline_chain_v1(
-        topic = topics[0],
-        raw_ideas = raw_ideas,
-        split_docs = split_docs
-    )
-"""
+REFINE_IDEA_DIR = f"{os.getenv('REFINE_IDEA_DIR')}/{VERSION}"
+WIKIPEDIA_KEYWORDS_DIR = f"{os.getenv('WIKIPEDIA_KEYWORDS_DIR')}/{VERSION}"
+WIKIPEDIA_DOCUMENTS_DIR = f"{os.getenv('WIKIPEDIA_DOCUMENTS_DIR')}/{VERSION}"
+LOGICAL_SEQUENCE_DIR = f"{os.getenv('LOGICAL_SEQUENCE_DIR')}/{VERSION}"
+OUTLINE_DIR = f"{os.getenv('OUTLINE_DIR')}/{VERSION}"
+CHAPTER_CONSOLIDATED_OUTLINE_DIR = f"{os.getenv('CHAPTER_CONSOLIDATED_OUTLINE_DIR')}/{VERSION}"
+CHAPTERS_DIR = f"{os.getenv('CHAPTERS_DIR')}/{VERSION}"
+CONSOLIDATED_CHAPTER_DIR = f"{os.getenv('CONSOLIDATED_CHAPTER_DIR')}/{VERSION}"
+REFINED_SUMMARY_DIR = f"{os.getenv('REFINED_SUMMARY_DIR')}/{VERSION}"
+FINAL_SUMMARY_DIR = f"{os.getenv('FINAL_SUMMARY_DIR')}/{VERSION}"
 
 def get_documents_from_list(
     keywords: List[str]
@@ -86,10 +52,6 @@ def get_documents_from_list(
                 documents_dict[doc.metadata["source"]] = doc
 
     print(f"num docs = {len(documents_dict)}")
-    """
-    for index, doc in enumerate(documents_dict.values()):
-        print(f"doc {index} = {len(doc.page_content)}, source = {doc.metadata['source']}")
-    """
 
     split_docs = CharacterTextSplitter(
         chunk_size = MAX_CONTEXT_SIZE_GPT_3_5, 
@@ -97,19 +59,6 @@ def get_documents_from_list(
     ).split_documents(documents = documents_dict.values())
 
     print(f"num split docs = {len(split_docs)}")
-
-    """
-    for index, doc in enumerate(split_docs):
-        print(f"doc {index} = {len(doc.page_content)}, sources = {doc.metadata['source']}")
-    """
-
-    """
-    concatenate_docs: List[Document] = concatenate_documents(
-        documents = split_docs,
-        context_size = MAX_CONTEXT_SIZE_GPT_3_5
-    )
-    print(f"num concatenated docs = {len(concatenate_docs)}")
-    """
 
     i = 0
     prev_source = ""
@@ -330,22 +279,6 @@ def write_chapters_helper(
     document: Document,
     current_chapter_topic_filename: str
 ) -> str:
-    
-    """
-    print("\n\n-------- Inside write_chapters_helper --------")
-    print(f"topic = {topic}")
-    print(f"section_number = {section_number}")
-    print(f"chapter_name = {chapter_name}")
-    print(f"chapter_number = {chapter_number}")
-    print(f"section_name = {section_name}")
-    print(f"ideas = {ideas}")
-    print(f"previous_section_title = {previous_section_title}")
-    print(f"previous_section_content = {previous_section_content}")
-    print(f"next_section_title = {next_section_title}")
-    print(f"formatted_source = {document.metadata['formatted_source']}")
-    print(f"source = {document.metadata['source']}")
-    print(f"current_chapter_topic_filename = {current_chapter_topic_filename}")
-    """
 
     section_summary_str = chapters_chain_v1(
         topic = topic,
@@ -493,75 +426,6 @@ def write_logical_sequence(
     logical_sequence_filename = f"{logical_sequence_dir}/logical_sequence.json"
     with open(logical_sequence_filename, "w") as f:
         json.dump(logical_sequence_dict, f)
-
-"""
-def write_styles(
-    topic: str,
-    outlines_dict: List[Dict[str, str]],
-    style_topic_dir: str
-) -> List[Dict[str, str]]:
-    create_directories(style_topic_dir)
-    styles: List[Dict[str, str]] = []
-    for index, outline in enumerate(outlines_dict):
-        style = style_chain_v1(
-            topic = topic,
-            outline = outline["outline"]
-        )
-        style_file_name = f"{style_topic_dir}/{index}.json"
-        with open(style_file_name, "w") as f:
-            f.write(style)
-        
-        styles.append(json.loads(style))
-    return styles
-
-def write_sections(
-    topic: str,
-    styles_dicts: List[Dict[str, str]],
-    outline_dicts: List[Dict[str, str]],
-    section_topic_dir: str,
-    use_gpt_4: bool
-):
-    for index, style in enumerate(styles_dicts):
-        style_dir_name = f"{section_topic_dir}/{index}"
-        create_directories(style_dir_name)
-        print(f"Working on outline - {index}")
-        section_chain_v1(
-            topic = topic,
-            context = outline_dicts[index]["context"],
-            structure = style["structure"],
-            style = style["style"],
-            narration = style["narration"],
-            tone = style["tone"],
-            initial_opening = style["opening"],
-            section_description = style["sections_description"],
-            section_topic_dir_path = style_dir_name,
-            use_gpt_4 = use_gpt_4
-        )
-
-def make_style_scripts(
-    num_sections: int,
-    section_topic_dir: str,
-    scripts_topic_dir: str
-):
-    create_directories(scripts_topic_dir)
-    for style_index in range(num_sections):
-        completed_script = ""
-        style_dir_name = f"{section_topic_dir}/{style_index}"
-        sections = read_text_files_from_directory(style_dir_name)
-        section_dicts = [json.loads(section) for section in sections]
-        for section_index, section in enumerate(section_dicts):
-            completed_script += section["section_content"] + "\n\n"
-            if section_index == len(section_dicts) - 1:
-                completed_script += section["next_section_opening"]
-
-        #print(f"---------- Completed Script {style_index} ----------")
-        #print(completed_script)
-        #print("---------- End Completed Script ----------")
-
-        script_file_name = f"{scripts_topic_dir}/{style_index}.txt"
-        with open(script_file_name, "w") as f:
-            f.write(completed_script)
-"""
             
 topics = [
     "Mahatma Gandhi", 
@@ -694,7 +558,6 @@ def create_podcast():
     """
     #refined_summary = read_text_files_from_directory(refined_summary_dir)[0]
 
-
     # Step: Write the final summary for the podcast
     final_summary_dir = f"{FINAL_SUMMARY_DIR}/{topic_dir_name}"
     write_final_summary(
@@ -703,66 +566,6 @@ def create_podcast():
     )
 
     final_summary_text = read_text_files_from_directory(final_summary_dir)[0]
-
-    # Step 3: Refine the outline
-    #refined_outline_topic_dir = f"{REFINED_OUTLINE_DIR}/{topic_dir_name}"
-    """
-    write_refined_outline(
-        topic = topic,
-        outlines = outlines_dicts,
-        refined_outline_topic_dir = refined_outline_topic_dir
-    )
-    """
-    #refined_outline = read_text_files_from_directory(refined_outline_topic_dir)[0]
-
-    # Step 4: Select style and write opening
-    """
-    style_topic_dir = f"{STYLE_OUTLINE_DIR}/{topic_dir_name}"
-    write_styles(
-        topic = topic,
-        outlines_dict = outlines_dicts,
-        style_topic_dir = style_topic_dir
-    )
-
-    styles = read_text_files_from_directory(style_topic_dir)
-    styles_dicts = [json.loads(style) for style in styles]
-    """
-
-    # Step 5: Write a few paragraphs for each section
-    """
-    use_gpt_4 = False
-    gpt_label = "gpt-4" if use_gpt_4 else "gpt-3.5"
-    section_topic_dir = f"{SECTIONS_DIR}/{topic_dir_name}/{gpt_label}"
-    write_sections(
-        topic = topic,
-        styles_dicts = styles_dicts,
-        outline_dicts = outlines_dicts,
-        section_topic_dir = section_topic_dir,
-        use_gpt_4 = use_gpt_4
-    )
-    """
-
-    # Step 6: Combine the sections to create the script
-    """
-    scripts_topic_dir = f"{SCRIPTS_DIR}/{topic_dir_name}/{gpt_label}"
-    make_style_scripts(
-        num_sections = len(styles_dicts),
-        section_topic_dir = section_topic_dir,
-        scripts_topic_dir = scripts_topic_dir
-    )
-    """
-"""
-def main_rss_feed():
-    documents = RSSFeedLoaderWrapper.load_url(
-        url = "https://news.ycombinator.com/rss",
-        load_max_docs = 10
-    )
-
-    for doc in documents:
-        print(doc)
-        #print("source = ", doc.metadata["source"])
-        #print("page_content = ", doc.page_content)
-"""
         
 if __name__ == "__main__":
     with get_openai_callback() as cb:

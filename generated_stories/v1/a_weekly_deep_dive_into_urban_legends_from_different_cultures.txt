@@ -1,0 +1,25 @@
+The radio show will be structured in a way that each episode focuses on an urban legend from a specific culture. The tone will be electric to engage with the audience and keep them on edge but also heartfelt to bring out the human connection in these stories. The format will be a dramatized interview where the host interacts with actors playing the role of people who have experienced the urban legend firsthand. Catchphrases or sound bytes will be used to keep the audience on their toes and entertained. The radio show will start with a brief introduction of the culture and the legend, then move into the dramatized interview and end with a brief analysis or talk about the legend.
+
+content:
+
+[Sound of a radio tuning in]
+
+Host: "Good evening, night owls. Welcome back to 'Urban Echoes'. I am your host, Alex. Each week, we dive deep into a haunting urban legend from around the globe, bringing you stories you won't hear in your everyday talk. This week, we're taking you to the heart of Japan, uncovering the chilling tale of the 'Slit-Mouthed Woman'. Remember, these are just legends... or are they?
+
+[A pause, then a sudden eerie sound effect]
+
+Host: "First, let's set the stage. Japan, a land of rich history, culture and... eerie tales. The Slit-Mouthed Woman, Kuchisake-Onna, a haunting figure from Japanese folklore. She's said to approach people at night, ask a spine-chilling question and... well, we'll get into that.
+
+[Sound of phone ringing]
+
+Host: "Tonight, we have... let's call him 'Kenji,' a man who claims to have encountered the Slit-Mouthed Woman. Kenji, are you there?"
+
+[Sound of phone picking up]
+
+'Kenji': "Yes, I am here, Alex."
+
+[They delve into the horrifying encounter of 'Kenji' with the Kuchisake-Onna.]
+
+Host: "That was... chilling to say the least. Remember, folks, these are just tales of yore, echoing through our urban jungles. Or are they? Until next week, this is Alex, signing off from Urban Echoes. But remember, keep your ears to the ground, you never know what you might hear."
+
+[Radio tuning out sound]

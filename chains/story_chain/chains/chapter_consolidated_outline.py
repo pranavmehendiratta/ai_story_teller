@@ -3,7 +3,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
 from chains.story_chain.prompts.chapter_consolidated_outline.chapter_consolidated_outline_system_prompt import system_prompt
 from chains.story_chain.prompts.chapter_consolidated_outline.chapter_consolidated_outline_human_prompt import human_prompt
-from common.models.base.base_content import BaseContent
 from langchain.chains.sequential import SequentialChain
 from typing import List, Dict, Any
 from langchain.schema.document import Document
